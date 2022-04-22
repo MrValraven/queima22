@@ -1,0 +1,17 @@
+@use '../../styles/colors';
+
+.cartazSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    h2 {
+        color: colors.$mainYellow;
+        font-size: 40px;
+    }
+    h1 {
+        font-size: 100px;
+    }
+}
