@@ -56,27 +56,27 @@ const Header = ({ appRef }) => {
           </Link>
           <li className="dropdown">
             <div className="text navItem">
-              <a className="dropdownName">Torneio</a>
+              <a className="dropdownName">FAQ</a>
               <i className="fas fa-chevron-down"></i>
             </div>
             <div className="subMenu">
               <Link
                 onClick={toggleNavbarMenu}
-                to="/grupos"
+                to="/link1"
                 className={`navItem ${
-                  location.pathname === "/grupos" ? "currentPage" : ""
+                  location.pathname === "/link1" ? "currentPage" : ""
                 }`}
               >
-                <span>⚆</span> Grupos
+                <span>⚆</span> Link 1
               </Link>
               <Link
                 onClick={toggleNavbarMenu}
-                to="/leaderboard"
+                to="/link2"
                 className={`navItem ${
-                  location.pathname === "/leaderboard" ? "currentPage" : ""
+                  location.pathname === "/link2" ? "currentPage" : ""
                 }`}
               >
-                <span>⚆</span> Jogadores
+                <span>⚆</span> Link 2
               </Link>
             </div>
           </li>
