@@ -1,14 +1,15 @@
-import React from 'react'
-import Hero from '../../components/Hero/Hero'
-import VideoCard from '../../components/VideoCard/VideoCard'
+import React from "react";
+import Hero from "../../components/Hero/Hero";
+import Sponsors from "../../components/Sponsors/Sponsors";
+import VideoCard from "../../components/VideoCard/VideoCard";
 
 const Home = () => {
   return (
     <div>
-        <Hero/>
-        <VideoCard />
+      <Hero />
+      <Sponsors />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
