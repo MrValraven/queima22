@@ -21,6 +21,20 @@ const Footer = () => {
         >
           <img src={IconeInstagram} alt="" />
         </a>
+        <a
+          href="https://twitter.com/aauevora"
+          target="_blank"
+          rel="noopenner noreferrer"
+        >
+          <img src={IconeTwitter} alt="" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/aauevora/mycompany/"
+          target="_blank"
+          rel="noopenner noreferrer"
+        >
+          <img src={IconeLinkedin} alt="" />
+        </a>
 
         <a
           href="https://www.facebook.com/QFEvora"

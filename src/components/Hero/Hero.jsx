@@ -5,6 +5,8 @@ import Image from "../../assets/artista.png";
 import Countdown from "../Countdown/Countdown";
 
 const Hero = () => {
+  const eventDateInMS = new Date(2022, 5, 3, 22, 0, 0).getTime();
+
   return (
     <div className="hero">
       <main>
@@ -29,7 +31,8 @@ const Hero = () => {
           <img src={Image} alt="" />
         </div>
       </main>
-      <Countdown />
+
+      <Countdown targetDate={eventDateInMS} />
     </div>
   );
 };

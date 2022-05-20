@@ -1,24 +1,31 @@
-import React from 'react'
+import React from "react";
+import DateTimeDisplay from "../DateTimeDisplay/DateTimeDisplay";
+import { useCountdown } from "../../hooks/useCountdown";
 
-import './styles.scss'
+import "./styles.scss";
 
-const Countdown = () => {
+const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
-    <div className='countdown'>
-        <div>
-            <p>5 dias</p>
-        </div>
-        <div>
-            <p>23 horas</p>
-        </div>
-        <div>
-            <p>45 minutos</p>
-        </div>
-        <div>
-            <p>22 segundos</p>
-        </div>
+    <div className="countdown">
+      <DateTimeDisplay value={days} type={"Dias"} />
+      <DateTimeDisplay value={hours} type={"Horas"} />
+      <DateTimeDisplay value={minutes} type={"Minutos"} />
+      <DateTimeDisplay value={seconds} type={"Segundos"} />
     </div>
-  )
-}
+  );
+};
 
-export default Countdown
+const Countdown = ({ targetDate }) => {
+  const [days, hours, minutes, seconds] = useCountdown(targetDate);
+
+  return (
+    <ShowCounter
+      days={days}
+      hours={hours}
+      minutes={minutes}
+      seconds={seconds}
+    />
+  );
+};
+
+export default Countdown;

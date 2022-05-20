@@ -1,17 +1,9 @@
-@use '../../styles/colors';
+@use "../../styles/colors";
 
 .countdown {
-    display: flex;
-    margin-left: 100px;
-    border-bottom: 1px solid #4e1b1d;
-    width: fit-content;
-
-    div {
-        padding: 15px;
-
-        p {
-            text-transform: uppercase;
-            font-size: 18px;
-        }
-    }
+  display: flex;
+  margin-left: 100px;
+  border-bottom: 1px solid #4e1b1d;
+  gap: 25px;
+  width: fit-content;
 }

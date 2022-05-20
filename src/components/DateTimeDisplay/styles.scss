@@ -1,0 +1,17 @@
+@use "../../styles/colors";
+
+.datetimedisplay {
+  display: flex;
+  align-items: flex-end;
+
+  p {
+    font-size: 36px;
+    color: colors.$mainYellow;
+  }
+
+  span {
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+}
