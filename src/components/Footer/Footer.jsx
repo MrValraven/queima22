@@ -2,6 +2,13 @@ import React from "react";
 
 import "./styles.scss";
 
+import IconeFacebook from "../../assets/icone_face.png";
+import IconeInstagram from "../../assets/icone_insta.png";
+import IconeLinkedin from "../../assets/icone_linkedin.png";
+import IconeTwitter from "../../assets/icone_twitter.png";
+import IconeMapa from "../../assets/icone_mapa.png";
+import IconeMail from "../../assets/icone_mail.png";
+
 const Footer = () => {
   return (
     <footer>
@@ -12,7 +19,7 @@ const Footer = () => {
           target="_blank"
           rel="noopenner noreferrer"
         >
-          <i className="fab fa-instagram"></i>
+          <img src={IconeInstagram} alt="" />
         </a>
 
         <a
@@ -20,7 +27,7 @@ const Footer = () => {
           target="_blank"
           rel="noopenner noreferrer"
         >
-          <i className="fab fa-facebook-square"></i>
+          <img src={IconeFacebook} alt="" />
         </a>
       </div>
       <div className="localizacao">
@@ -32,18 +39,9 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fas fa-map-marker-alt icon" aria-hidden="true">
-                <span>Entrada</span>
-              </i>
+              <img src={IconeMapa} alt="" />
+              <span>Entrada</span>
               <p>Av. da Universidade, 7005-869 Évora</p>
-            </a>
-          </li>
-          <li>
-            <a href="tel:+351266098003">
-              <i className="fas fa-phone icon" aria-hidden="true">
-                <span>Telefone</span>
-              </i>
-              <p>+ 351 266 09 80 03</p>
             </a>
           </li>
         </ul>
@@ -52,6 +50,7 @@ const Footer = () => {
         <h2>Emails</h2>
         <ul>
           <li>
+            <img src={IconeMail} alt="" />
             <a href="mailto:queima@aaue.pt">
               <p>queima@aaue.pt</p>
             </a>

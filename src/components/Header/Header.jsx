@@ -62,42 +62,50 @@ const Header = ({ appRef }) => {
             <div className="subMenu">
               <Link
                 onClick={toggleNavbarMenu}
-                to="/link1"
+                to="/comochegar"
                 className={`navItem ${
-                  location.pathname === "/link1" ? "currentPage" : ""
+                  location.pathname === "/comochegar" ? "currentPage" : ""
                 }`}
               >
-                <span>⚆</span> Link 1
+                <span>⚆</span> Como Chegar
               </Link>
               <Link
                 onClick={toggleNavbarMenu}
-                to="/link2"
+                to="/ecocopo"
                 className={`navItem ${
-                  location.pathname === "/link2" ? "currentPage" : ""
+                  location.pathname === "/ecocopo" ? "currentPage" : ""
                 }`}
               >
-                <span>⚆</span> Link 2
+                <span>⚆</span> Ecocopo
+              </Link>
+              <Link
+                onClick={toggleNavbarMenu}
+                to="/cashless"
+                className={`navItem ${
+                  location.pathname === "/cashless" ? "currentPage" : ""
+                }`}
+              >
+                <span>⚆</span> Cashless
               </Link>
             </div>
           </li>
           <Link
             onClick={toggleNavbarMenu}
-            to="/faq"
+            to="/precario"
             className={`navItem ${
-              location.pathname === "/faq" ? "currentPage" : ""
+              location.pathname === "/precario" ? "currentPage" : ""
             }`}
           >
-            FAQ
+            Precário
           </Link>
-          <Link
-            onClick={toggleNavbarMenu}
-            to="/bilhetes"
-            className={`navItem bilhetes ${
-              location.pathname === "/bilhetes" ? "currentPage" : ""
-            }`}
+          <a
+            href="https://e.3cket.com/queimadasfitasevora"
+            target="_blank"
+            rel="noopenner noreferrer"
+            className="bilhetes navItem"
           >
             Bilhetes
-          </Link>
+          </a>
         </ul>
       </nav>
 

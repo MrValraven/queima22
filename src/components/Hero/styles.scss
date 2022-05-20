@@ -1,66 +1,64 @@
-@use '../../styles/colors';
+@use "../../styles/colors";
 .hero {
-    height: 100vh;
-    background: url('../../assets/background.jpg') center center ;
+  height: 100vh;
+  background: url("../../assets/background.jpg") center center;
 
-    main {
-        height: 80vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+  main {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 100px;
 
-        .heroImage {
-    
-            img {
-                width: 400px;
-            }
-        }
-    
-        .heroText {
-            display: flex;
-            flex-direction: column;
-    
-            h1 {
-                font-size: 90px;
-            }
+    .heroImage {
+      display: none;
 
-            h2 {
-                font-size: 24px;
-                opacity: 0.6;
-            }
-    
-            p {
-                margin: 10px 0 25px 0;
-                max-width: 500px;
-            }
-
-            a {
-                width: 300px;
-                text-align: center;
-                text-transform: uppercase;
-                padding: 10px 20px;
-              
-                appearance: none;
-                outline: none;
-                border: none;
-                border-radius: 24px;
-                color: colors.$mainDarkBlue;
-                background-color: colors.$mainYellow;
-                box-shadow: 0px 7px darken(colors.$mainYellow, 11%);
-                &:hover {
-                    cursor: pointer;
-                    transform: translateY(-2px);
-                    
-                }
-
-                &:active {
-                    
-                    box-shadow: 0px 5px darken(colors.$mainYellow, 11%);
-                }
-            }
-        }
+      img {
+        width: 400px;
+      }
     }
-    
-   
 
+    .heroText {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 90px;
+      }
+
+      h2 {
+        font-size: 24px;
+        opacity: 0.6;
+      }
+
+      p {
+        margin: 10px 0 25px 0;
+        font-size: 20px;
+        max-width: 500px;
+      }
+
+      a {
+        width: 300px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px 20px;
+
+        appearance: none;
+        outline: none;
+        border: none;
+        border-radius: 24px;
+        color: colors.$mainDarkBlue;
+        background-color: colors.$mainYellow;
+        box-shadow: 0px 7px darken(colors.$mainYellow, 11%);
+        &:hover {
+          cursor: pointer;
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          box-shadow: 0px 5px darken(colors.$mainYellow, 11%);
+        }
+      }
+    }
+  }
 }
