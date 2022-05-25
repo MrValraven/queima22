@@ -3,13 +3,12 @@ import React from "react";
 import "./styles.scss";
 import Image from "../../assets/artista.png";
 import Countdown from "../Countdown/Countdown";
+import Slider from "../Slider/Slider";
 
 const Hero = () => {
-  const eventDateInMS = new Date(2022, 5, 3, 22, 0, 0).getTime();
-
   return (
     <div className="hero">
-      <main>
+      {/* <main>
         <div className="heroText">
           <h2>--- 3 a 12 de Junho ---</h2>
           <h1>Queima das Fitas'22</h1>
@@ -32,7 +31,8 @@ const Hero = () => {
         </div>
       </main>
 
-      <Countdown targetDate={eventDateInMS} />
+      <Countdown targetDate={eventDateInMS} /> */}
+      <Slider />
     </div>
   );
 };

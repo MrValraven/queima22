@@ -8,17 +8,70 @@
 }
 
 .item {
-  min-height: 40rem;
-  max-height: 40rem;
   min-width: 100%;
   padding: 40px;
   display: flex;
   justify-content: space-between;
 
   img {
-    width: 60%;
-    height: 100%;
+    width: 50%;
     border-radius: 2rem;
     pointer-events: none;
+  }
+
+  .artistText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+
+    .artistInfo {
+      h1 {
+        font-size: 72px;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .item {
+    gap: 100px;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    img {
+      width: 70%;
+      align-self: center;
+    }
+
+    .artistText {
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .item {
+    gap: 50px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+
+    img {
+      width: 100%;
+      align-self: normal;
+    }
+
+    .artistText {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0;
+      gap: 25px;
+    }
   }
 }
