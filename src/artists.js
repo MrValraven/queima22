@@ -1,7 +1,7 @@
 import AnaMalhoaImage from "./assets/anamalhoa.jpg";
 import ProfjamImage from "./assets/profjam.jpg";
 import LonerImage from "./assets/loner.jpg";
-import TelioImage from "./assets/Telio.jpg";
+import TelioImage from "./assets/telio.jpg";
 
 const images = [
   {
