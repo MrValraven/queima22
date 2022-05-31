@@ -1,0 +1,22 @@
+@use "../../styles/colors";
+
+.comoChegar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  h1 {
+    font-size: 72px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    a {
+      color: colors.$mainYellow;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

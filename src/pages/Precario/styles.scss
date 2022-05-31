@@ -10,6 +10,7 @@
 
   h1 {
     font-size: 72px;
+    text-align: center;
   }
 
   .container {
@@ -39,5 +40,11 @@
     .preco {
       color: colors.$mainYellow;
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .precario {
+    padding: 100px 15px;
   }
 }

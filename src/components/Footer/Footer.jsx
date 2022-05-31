@@ -20,6 +20,7 @@ const Footer = () => {
           rel="noopenner noreferrer"
         >
           <img src={IconeInstagram} alt="" />
+          <p>QFEVORA</p>
         </a>
         <a
           href="https://twitter.com/aauevora"
@@ -27,6 +28,7 @@ const Footer = () => {
           rel="noopenner noreferrer"
         >
           <img src={IconeTwitter} alt="" />
+          <p>@AAUEVORA</p>
         </a>
         <a
           href="https://www.linkedin.com/company/aauevora/mycompany/"
@@ -34,6 +36,7 @@ const Footer = () => {
           rel="noopenner noreferrer"
         >
           <img src={IconeLinkedin} alt="" />
+          <p>@AAUEVORA</p>
         </a>
 
         <a
@@ -42,6 +45,7 @@ const Footer = () => {
           rel="noopenner noreferrer"
         >
           <img src={IconeFacebook} alt="" />
+          <p> QFEVORA</p>
         </a>
       </div>
       <div className="localizacao">

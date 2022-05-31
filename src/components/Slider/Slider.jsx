@@ -33,7 +33,9 @@ const Slider = () => {
                     <h1>{artist.name}</h1>
                     <p>{artist.date}</p>
                   </div>
-                  <Countdown targetDate={eventDateInMS} />
+                  {Date.now() <= eventDateInMS ? (
+                    <Countdown targetDate={eventDateInMS} />
+                  ) : null}
                 </div>
                 <img src={artist.img} alt="" />
               </motion.div>
